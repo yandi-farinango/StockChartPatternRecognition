@@ -1,8 +1,8 @@
 import yfinance as yf 
 import pandas as pd 
 
-pizza = yf.Ticker('AAPL')
+data = yf.Ticker('AAPL')
 
-dataframe = pizza.history(period='1y')
+dataframe = data.history(period='1y')
 
 print(dataframe.to_csv())
